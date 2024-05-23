@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .h-screen {
+      overflow-x: hidden;
+      width: 70px;
+    }
+  
+    .flex-1 {
+      display: none;
+    }
+  
+    .border-t,
+    .border-b {
+      display: none;
+    }
+  
+    .overflow-hidden {
+      display: none;
+    }
+  
+    .w-32 {
+      display: none;
+    }
+  
+    .w-52 {
+      display: none;
+    }
+  }
+  

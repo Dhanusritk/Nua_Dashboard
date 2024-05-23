@@ -1,0 +1,29 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Reduced border thickness */
+  border-radius: 50%;
+  border-top: 8px solid #3498db; /* Reduced border thickness */
+  width: 80px; /* Reduced width */
+  height: 80px; /* Reduced height */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Optional: Make the loader responsive */
+@media (max-width: 768px) {
+  .loader {
+    width: 60px; /* Adjusted width for smaller screens */
+    height: 60px; /* Adjusted height for smaller screens */
+    border-width: 6px; /* Adjusted border thickness for smaller screens */
+  }
+}

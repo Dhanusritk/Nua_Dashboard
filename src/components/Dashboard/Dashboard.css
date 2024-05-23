@@ -1,0 +1,259 @@
+/* Global Styles */
+.container {
+    width: 100%;
+}
+
+/* Adjust button styles */
+button {
+    margin-right: 20px;
+    border: none;
+    background-color: black; /* Change button background color to black */
+    color: white; /* Change button text color to white */
+    transition: background-color 0.3s ease; /* Add transition for smoother color change */
+}
+
+button:hover {
+    background-color: #6e9887; /* Change button background color on hover to match Garden of Books theme */
+}
+
+.sc-cwHqhk.kzZBXj {
+    font-weight: bold; /* Make column titles bold */
+    font-size: 13px; /* Increase font size of column titles */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+/* Adjust DataTable styles */
+.custom-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    font-family: Arial, sans-serif; /* Change font family */
+    font-size: 20px; /* Increase font size */
+}
+
+/* Header Styles */
+.dataTable thead {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: bold; /* Ensure header text is bold */
+}
+
+.dataTable th {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Body Styles */
+.dataTable tbody {
+    background-color: #fff;
+}
+
+.dataTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 20px; /* Increase font size */
+}
+
+/* Highlight on Hover */
+.dataTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Search Input Style */
+.w-25 {
+    width: 25% !important;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .dashboard-container {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    .sidebar-container {
+        width: 100%; /* Make sidebar container fill available width */
+        margin-bottom: 20px;
+    }
+
+    .content-container {
+        padding: 0; /* Remove padding */
+    }
+
+    .app-bar {
+        display: flex;
+        align-items: center;
+        overflow-x: auto; /* Make app bar content scrollable */
+        flex-wrap: nowrap; /* Prevent wrapping of content */
+        margin-left: 95px;
+        min-height: 65px; 
+        margin-top: 0; /* Remove any top margin */
+        padding-top: 0;
+    }
+
+    .app-bar .app-bar-content {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .app-bar .title,
+    .app-bar input[type="text"],
+    .app-bar button {
+        flex-shrink: 0; /* Prevent elements from shrinking */
+        margin-right: 10px; /* Spacing between items */
+    }
+    .app-bar .title {
+        font-size: 24px !important; /* Adjust font size for mobile screens */
+    }
+    .app-bar .search-container {
+        display: flex;
+        align-items: center;
+        flex-grow: 1; /* Allow search container to grow */
+        justify-content: flex-end; /* Align items to the right */
+        margin-left: 150px;
+        margin-top: 2px;
+    }
+    .app-bar .export-buttons {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+    }
+
+    .app-bar .export-buttons button:last-child {
+        margin-right: 0;
+    }
+
+    .log-table-container {
+        /* margin-top: 10px; Remove margin */
+        margin-left: 95px; /* Adjust margin to align with the screen */
+    }
+
+    .custom-data-table header {
+        display: table-header-group; /* Display column headings */
+    }
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.custom-data-table .rdt_TableHead .rdt_TableColHeader {
+    font-weight: bold; /* Make column titles bold */
+    font-size: 16px; /* Increase font size of column titles */
+}
+
+.sidebar-container {
+    flex-shrink: 0;
+    width: 200px;
+   
+}
+
+.content-container {
+    flex-grow: 1;
+    margin-top: 10px;
+    
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-bar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Navbar Title Styles */
+.app-bar .title {
+   
+    color: black;
+    font-family: "Sacramento", cursive; /* Use Sacramento font */
+    font-weight: 700; /* Set font weight */
+    font-style: normal; /* Set font style */
+    font-size: 38px; /* Adjust font size */
+    margin-right: 20px; /* Add margin to the right */
+}
+
+
+.app-bar .search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow search container to grow */
+    justify-content: flex-end; /* Align items to the right */
+    height: 15px;
+}
+
+.app-bar .search-container input[type="text"] {
+    width: auto;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.app-bar .search-container button {
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+}
+
+.app-bar .search-container button:hover {
+    cursor: pointer;
+}
+
+.dashboard-container .custom-data-table header {
+    display: none;
+}
+.sc-ikkyvV{
+    display: none !important;
+}
+/* .log-table-container .dataTable thead {
+    display: none !important;
+  }
+  
+.iIzCTJ {
+display: none !important;
+} */
+.custom-data-table .rdt_TableHead {
+    display: none !important;
+  }
+  
