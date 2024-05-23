@@ -28,7 +28,7 @@ To run the app locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/Dhanusritk/Nua-dashboard.git
+   git clone https://github.com/Dhanusritk/Nua_Dashboard
    cd dash
    ```
 
